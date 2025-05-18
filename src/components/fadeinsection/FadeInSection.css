@@ -1,0 +1,11 @@
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: opacity 2.0s ease-out, transform 2.0s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

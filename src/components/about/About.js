@@ -1,22 +1,27 @@
 import React from "react";
 import Socials from "../socials/Socials";
 import "./About.css";
+import FadeInSection from "../fadeinsection/FadeInSection.jsx";
 
 export default function About() {
   return (
-    <section className="about-container" id="about">
-      <h1> About Me </h1>
-      <div className="text-box">
-        <p>
-          Hello, my name is John and I'm a fullstack developer. I have a
-          Computer Science degree from Mississippi College and I have 4+ years
-          of development experience plus 6+ years of IT experience. I've been
-          working in manufacturing for a few years now and I am looking to
-          expand my career in a different environment. I hope you consider me
-          for a position and I look forward to hearing from you.
-        </p>
+    <section id="about">
+     <FadeInSection>
+      <div className="about-container">
+        <h1> About Me </h1>
+        <div className="text-box">
+          <p>
+            Hello, my name is John and I'm a fullstack developer. I have a
+            Computer Science degree from Mississippi College and I have 4+ years
+            of development experience plus 6+ years of IT experience. I've been
+            working in manufacturing for a few years now and I am looking to
+            expand my career in a different environment. I hope you consider me
+            for a position and I look forward to hearing from you.
+          </p>
         <Socials />
       </div>
+      </div>
+      </FadeInSection>
     </section>
   );
 }

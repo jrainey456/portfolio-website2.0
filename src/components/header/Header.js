@@ -1,14 +1,18 @@
 import React from "react";
 import "./Header.css";
 import rain from "../../assets/mp4/bridge.mp4";
+import window from "../../assets/mp4/windowWithTea.mp4";
+import city from "../../assets/mp4/cityRain.mp4"
+import street from "../../assets/mp4/streetRain.mp4"
 import Resume from "../../assets/misc/Resume.pdf";
+
 
 export default function Header() {
   return (
     <section className="header-container" id="home">
       <div className="scroll-background">
         <video autoPlay muted loop>
-          <source src={rain} type="video/mp4" />
+          <source src={street} type="video/mp4" />
         </video>
       </div>
       <div className="content">
