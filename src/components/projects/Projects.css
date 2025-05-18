@@ -1,0 +1,96 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 800px;
+  gap: 30px;
+}
+
+.projects-container > h1 {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+.projects-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.projects-card {
+  border: 1px solid var(--color-primary-variant);
+  background-color: var(--color-primary);
+  transition: var(--transition);
+  color: var(--color-light);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  top: 0;
+  position: relative;
+  text-align: center;
+  width: 350px;
+  height: 400px;
+}
+
+.projects-card:hover {
+  transform: scale(1.05);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects-button-container {
+  display: flex;
+  padding: 5px;
+  gap: 4px;
+}
+
+.projects-display {
+  border: 2px solid var(--color-primary);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-card-header {
+  font-size: 30px;
+}
+
+.projects-card > h1 {
+  font-size: 25px;
+}
+
+.projects-card-header > h6 {
+  font-size: 15px;
+}
+
+.projects-card-body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 17px;
+  gap: 30px;
+}
+
+.projects-button-container > .btn:hover {
+  background: var(--color-primary-variant);
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1040px) {
+  .projects-card-container {
+    flex-direction: column;
+  }
+}

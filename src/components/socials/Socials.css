@@ -1,0 +1,21 @@
+.socials-container {
+  font-size: 25px;
+  text-decoration: none;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-container > a {
+  color: var(--color-light);
+}
+
+.socials-container > a:hover {
+  color: white;
+}
+
+.socials-container > a:visited {
+  color: inherit;
+}
