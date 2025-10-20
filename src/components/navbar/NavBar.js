@@ -40,34 +40,36 @@ export default function NavBar() {
 
   return (
     <div className={navColor ? "nav nav-scroll" : "nav"}>
-      <a className="logo-text" href="#" onClick={() => setActive("#")}>
-        <FaCloudMoonRain size={30} />
-        Rainy Day Development
-      </a>
-      <div className="nav-menu">
-        <a
-          href="#about"
-          onClick={() => setActive("#about")}
-          className={active === "#about" ? "active" : ""}
-        >
-          About
+      <div className="nav-content">
+        <a className="logo-text" href="#" onClick={() => setActive("#")}>
+          <FaCloudMoonRain size={30} />
+          Rainy Day Development
         </a>
-        <a
-          href="#experience"
-          onClick={() => setActive("#experience")}
-          className={active === "#experience" ? "active" : ""}
-        >
-          Experience
-        </a>
-        <a
-          href="#projects"
-          onClick={() => setActive("#projects")}
-          className={active === "#projects" ? "active" : ""}
-        >
-          Projects
-        </a>
+        <div className="nav-menu">
+          <a
+            href="#about"
+            onClick={() => setActive("#about")}
+            className={active === "#about" ? "active" : ""}
+          >
+            About
+          </a>
+          <a
+            href="#experience"
+            onClick={() => setActive("#experience")}
+            className={active === "#experience" ? "active" : ""}
+          >
+            Experience
+          </a>
+          <a
+            href="#projects"
+            onClick={() => setActive("#projects")}
+            className={active === "#projects" ? "active" : ""}
+          >
+            Projects
+          </a>
 
 
+        </div>
       </div>
     </div>
   );
