@@ -16,10 +16,12 @@ function App() {
     <>
       <NavBar />
       <Header />
+      <div className="main-content">
+        <About />
+        <Experience />
+        <Projects />
+      </div>
       <MobileNav />
-      <About />
-      <Experience />
-      <Projects />
     </>
   );
 }

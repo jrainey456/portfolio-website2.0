@@ -3,11 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  min-height: 800px;
+  padding: 60px;
 }
 
-.about-container > h1 {
+.about-container>h1 {
   padding: 40px;
   font-size: 2rem;
 }
@@ -15,7 +14,6 @@
 .text-box {
   color: var(--color-light);
   font-size: 1.5rem;
-  width: 50%;
 }
 
 @media screen and (max-width: 1040px) {

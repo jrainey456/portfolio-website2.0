@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --color-bg: linear-gradient(to right bottom, #2e3134, #2a2d2f, #26282a, #222426, #1e2021);
+  --color-bg: linear-gradient(to right top, #575859, #505152, #494a4b, #434344, #3c3c3d, #39393a, #353537, #323234, #313234, #303134, #2f3134, #2e3134);
   --color-bg-dark: linear-gradient(to right bottom, #2e3134, #2a2d2f, #26282a, #222426, #1e2021);
   --color-bg-varient: #353944;
   --color-primary: #2e3134;
@@ -9,7 +9,7 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
-  --transition: all 400ms ease;
+  --transition: all 600ms ease;
 }
 
 html {
@@ -44,8 +44,18 @@ a {
 }
 
 section {
-  background: var(--color-bg);
   color: var(--color-white);
+}
+
+.main-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 .btn {
@@ -62,4 +72,22 @@ section {
 
 .btn:hover {
   background: transparent;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  /* More transparent background */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2),
+    /* Increased shadow depth */
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  /* Inner highlight */
+  backdrop-filter: blur(12px);
+  /* Increased blur for more glass effect */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* More subtle border */
+  width: 70vw;
+  transition: all 0.3s ease;
+  /* Smooth hover transition */
 }
