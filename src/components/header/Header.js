@@ -18,7 +18,7 @@ export default function Header() {
       <div className="content">
         <h5>Hello I'm</h5>
         <h1>John Rainey</h1>
-        <h5>Fullstack Developer</h5>
+        <h5>Software Developer</h5>
         <div className="header-button-container">
           <a href="#projects" className="btn">
             PROJECTS
