@@ -44,7 +44,7 @@ export default function Experience() {
                 <div className="experience-card-header">
                   <AiOutlineConsoleSql />
                   <h1>SQL Database</h1>
-                  <h6>6+ years</h6>
+                  <h6>9+ years</h6>
                 </div>
                 <div className="experience-card-body">
                   <p>Environment Setup</p>
@@ -57,7 +57,7 @@ export default function Experience() {
                 <div className="experience-card-header">
                   <FaCode />
                   <h1>ASP.NET</h1>
-                  <h6>2+ years</h6>
+                  <h6>4+ years</h6>
                 </div>
                 <div className="experience-card-body">
                   <p>Web Applications</p>
