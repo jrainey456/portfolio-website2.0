@@ -3,7 +3,7 @@ import "./Header.css";
 import rain from "../../assets/mp4/bridge.mp4";
 import window from "../../assets/mp4/windowWithTea.mp4";
 import city from "../../assets/mp4/cityRain.mp4"
-import street from "../../assets/mp4/streetRain.mp4"
+import background from "../../assets/mp4/rainOnWater.mp4"
 import Resume from "../../assets/misc/Resume.pdf";
 
 
@@ -12,7 +12,7 @@ export default function Header() {
     <section className="header-container" id="home">
       <div className="scroll-background">
         <video autoPlay muted loop>
-          <source src={street} type="video/mp4" />
+          <source src={background} type="video/mp4" />
         </video>
       </div>
       <div className="content">
@@ -20,12 +20,12 @@ export default function Header() {
         <h1>John Rainey</h1>
         <h5>Software Developer</h5>
         <div className="header-button-container">
-          <a href="#projects" className="btn">
+          {/* <a href="#projects" className="btn">
             PROJECTS
           </a>
           <a href="#about" className="btn">
             ABOUT
-          </a>
+          </a> */}
           <a href={Resume} download className="btn">
             RESUME
           </a>
